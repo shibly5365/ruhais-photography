@@ -4,9 +4,12 @@ import { Button } from "@/components/ui/button";
 import { Star, Camera, Heart, PartyPopper, Package, ArrowRight } from "lucide-react";
 
 import heroWedding from "@/assets/hero-wedding.jpeg";
+import heroWedding5 from "@/assets/hero-wedding5.jpeg";
 import heroPortrait from "@/assets/hero-portrait.jpeg";
+import heroPortrait1 from "@/assets/hero-portrait1.jpeg";
 import heroEvents from "@/assets/hero-events.jpg";
 import heroModeling from "@/assets/hero-modeling.jpeg";
+import heroModeling2 from "@/assets/hero-modeling2.jpeg";
 
 const heroSlides = [
   { src: heroWedding, alt: "Wedding Photography" },
@@ -156,7 +159,7 @@ const Index = () => {
           <h2 className="font-display text-4xl md:text-5xl font-bold">Follow Our Journey</h2>
         </div>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
-          {[heroWedding, heroPortrait, heroEvents, heroModeling, heroModeling, heroEvents, heroPortrait, heroWedding].map(
+          {[heroWedding, heroPortrait, heroEvents, heroModeling, heroModeling2, heroEvents, heroPortrait1, heroWedding5].map(
             (src, i) => (
               <div
                 key={i}

@@ -10,6 +10,7 @@ import heroWedding5 from "@/assets/hero-wedding5.jpeg";
 import heroPortrait from "@/assets/hero-portrait.jpeg";
 import heroPortrait1 from "@/assets/hero-portrait1.jpeg";
 import heroPortrait2 from "@/assets/hero-portrait2.jpeg";
+import heroPortrait3 from "@/assets/hero-portrait3.jpeg";
 import heroPortrait4 from "@/assets/hero-portrait4.jpeg";
 import heroEvents from "@/assets/hero-events.jpg";
 import heroModeling from "@/assets/hero-modeling.jpeg"
@@ -31,7 +32,7 @@ const galleryItems = [
   { src: heroPortrait2, alt: "Portrait session", category: "Portrait" as const },
   { src: heroModeling1, alt: "Modeling shot", category: "Modeling" as const },
   { src: heroWedding3, alt: "Wedding ceremony", category: "Wedding" as const },
-  { src: heroPortrait2, alt: "Creative portrait", category: "Portrait" as const },
+  { src: heroPortrait3, alt: "Creative portrait", category: "Portrait" as const },
  { src: heroPortrait4, alt: "Creative portrait", category: "Portrait" as const },
   { src: heroWedding4, alt: "Wedding moment", category: "Wedding" as const },
   { src: heroModeling2, alt: "Modeling shot", category: "Modeling" as const },
