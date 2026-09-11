@@ -140,7 +140,7 @@ const Services = () => (
               ))}
             </ul>
             <p className="font-display text-2xl font-bold gold-gradient-text">
-              {svc.starting}
+              {/* {svc.starting} */}
             </p>
             <Button variant="hero" asChild>
               <Link to="/contact">Book This Package</Link>

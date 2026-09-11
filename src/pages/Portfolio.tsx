@@ -12,11 +12,14 @@ import heroPortrait1 from "@/assets/hero-portrait1.jpeg";
 import heroPortrait2 from "@/assets/hero-portrait2.jpeg";
 import heroPortrait3 from "@/assets/hero-portrait3.jpeg";
 import heroPortrait4 from "@/assets/hero-portrait4.jpeg";
+import heroPortrait5 from "@/assets/hero-portrait5.jpeg";
 import heroEvents from "@/assets/hero-events.jpg";
 import heroModeling from "@/assets/hero-modeling.jpeg"
 import heroModeling1 from "@/assets/hero-modeling1.jpeg"
 import heroModeling2 from "@/assets/hero-modeling2.jpeg"
 import heroModeling3 from "@/assets/hero-modeling3.jpeg";
+import heroModeling4 from "@/assets/hero-modeling4.jpeg";
+import heroModeling6 from "@/assets/hero-modeling6.jpeg";
 
 type Category = "All" | "Wedding" | "Portrait" | "Events" | "Modeling";
 
@@ -27,18 +30,21 @@ const galleryItems = [
   { src: heroModeling, alt: "Modeling shot", category: "Modeling" as const },
   { src: heroWedding1, alt: "Wedding ceremony", category: "Wedding" as const },
   { src: heroPortrait1, alt: "Creative portrait", category: "Portrait" as const },
-
+  
+  { src: heroModeling4, alt: "Modeling shot", category: "Modeling" as const },
   { src: heroWedding2, alt: "Wedding moment", category: "Wedding" as const },
   { src: heroPortrait2, alt: "Portrait session", category: "Portrait" as const },
   { src: heroModeling1, alt: "Modeling shot", category: "Modeling" as const },
   { src: heroWedding3, alt: "Wedding ceremony", category: "Wedding" as const },
   { src: heroPortrait3, alt: "Creative portrait", category: "Portrait" as const },
- { src: heroPortrait4, alt: "Creative portrait", category: "Portrait" as const },
+  { src: heroModeling3, alt: "Modeling shot", category: "Modeling" as const },
+  { src: heroPortrait4, alt: "Creative portrait", category: "Portrait" as const },
   { src: heroWedding4, alt: "Wedding moment", category: "Wedding" as const },
   { src: heroModeling2, alt: "Modeling shot", category: "Modeling" as const },
   { src: heroWedding5, alt: "Wedding ceremony", category: "Wedding" as const },
-  { src: heroModeling3, alt: "Modeling shot", category: "Modeling" as const },
-
+  { src: heroPortrait5, alt: "Creative portrait", category: "Portrait" as const },
+  { src: heroModeling6, alt: "Modeling shot", category: "Modeling" as const },
+  
 ];
 
 const categories: Category[] = ["All", "Wedding", "Portrait", "Events", "Modeling"];
