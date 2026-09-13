@@ -90,7 +90,7 @@ const Index = () => {
             <span className="gold-gradient-text">Creating Art</span>
           </h1>
           <p className="text-muted-foreground text-lg md:text-xl max-w-xl mb-10 animate-fade-in" style={{ animationDelay: "0.4s" }}>
-            Award-winning photography that tells your unique story with elegance and emotion.
+            Authentic photography that captures your unique story with creativity and emotion.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 animate-fade-in" style={{ animationDelay: "0.6s" }}>
             <Button variant="hero" size="xl" asChild>
@@ -155,7 +155,7 @@ const Index = () => {
       {/* ── Instagram Feed Preview ── */}
       <section ref={instaSection.ref} className="section-padding max-w-7xl mx-auto">
         <div className="text-center mb-12">
-          <p className="text-primary font-body text-sm tracking-[0.2em] uppercase mb-3">@lumierestudio</p>
+          <p className="text-primary font-body text-sm tracking-[0.2em] uppercase mb-3">@ruhhstudio</p>
           <h2 className="font-display text-4xl md:text-5xl font-bold">Follow Our Journey</h2>
         </div>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-3">

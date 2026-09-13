@@ -65,17 +65,20 @@ const Contact = () => {
 
   return (
     <div className="pt-24">
-      <section className="section-padding text-center max-w-4xl mx-auto">
-        <p className="text-primary font-body text-sm tracking-[0.2em] uppercase mb-3">
-          Get in Touch
-        </p>
-        <h1 className="font-display text-5xl md:text-6xl font-bold mb-6">
-          Contact Us
-        </h1>
-        <p className="text-muted-foreground text-lg">
-          Ready to create something beautiful? Let's start a conversation.
-        </p>
-      </section>
+<section className="section-padding text-center max-w-3xl mx-auto">
+  <p className="text-primary font-body text-xs md:text-sm tracking-[0.1em] uppercase mb-3">
+    Every Story Begins With A Moment
+  </p>
+
+  <h1 className="font-display text-5xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6">
+    Tell Us Your <span className="gold-gradient-text">Story</span>
+  </h1>
+
+  <p className="text-muted-foreground text-base md:text-lg leading-relaxed max-w-2xl mx-auto">
+    Share your vision, your moments, and what makes your story unique.
+    Let’s turn them into photographs you’ll remember forever.
+  </p>
+</section>
 
       <section className="max-w-6xl mx-auto px-6 pb-20">
         <div className="flex flex-col lg:flex-row gap-12">

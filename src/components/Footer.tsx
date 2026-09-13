@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { Instagram, Facebook, Twitter, Mail, Phone, MapPin } from "lucide-react";
+import { FaWhatsapp } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -9,7 +10,7 @@ const Footer = () => {
           {/* Brand */}
           <div>
             <h3 className="font-display text-2xl font-bold mb-4">
-              <span className="gold-gradient-text">Lumière</span>{" "}
+              <span className="gold-gradient-text">Ruhh</span>{" "}
               <span className="font-light">Studio</span>
             </h3>
             <p className="text-muted-foreground text-sm leading-relaxed">
@@ -55,9 +56,8 @@ const Footer = () => {
             <h4 className="font-display text-lg font-semibold mb-4">Follow Us</h4>
             <div className="flex gap-4">
               {[
-                { icon: Instagram, href: "#" },
-                { icon: Facebook, href: "#" },
-                { icon: Twitter, href: "#" },
+                { icon: Instagram, href: "https://www.instagram.com/ruhh.photography?stkn=bnp5NmY3MWUxc3Bx&utm_source=qr" },
+                { icon: FaWhatsapp, href: "https://wa.me/917736256589" },
               ].map(({ icon: Icon, href }, i) => (
                 <a
                   key={i}
@@ -74,7 +74,7 @@ const Footer = () => {
         </div>
 
         <div className="mt-12 pt-8 border-t border-border/50 text-center text-sm text-muted-foreground">
-          © {new Date().getFullYear()} Lumière Studio. All rights reserved.
+          © {new Date().getFullYear()} Ruhh Studio. All rights reserved.
         </div>
       </div>
     </footer>
