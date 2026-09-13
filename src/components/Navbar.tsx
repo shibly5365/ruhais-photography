@@ -36,7 +36,7 @@ const Navbar = () => {
     >
       <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
         <Link to="/" className="font-display text-2xl font-bold tracking-wide">
-          <span className="gold-gradient-text">Ruhh</span>
+          <span className="gold-gradient-text">Ruh</span>
           <span className="text-foreground ml-1 font-light">Studio</span>
         </Link>
         {/* Desktop links */}

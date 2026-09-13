@@ -34,6 +34,7 @@ const Contact = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+
     if (!formData.name || !formData.email || !formData.message) {
       toast({
         title: "Please fill in all required fields",
@@ -41,10 +42,35 @@ const Contact = () => {
       });
       return;
     }
+
+    const whatsappNumber = "917736256589";
+
+    const message = `
+Hello Ruhh Studio,
+
+I'd like to enquire about a photography session.
+
+Name: ${formData.name}
+Phone: ${formData.phone || "Not provided"}
+Email: ${formData.email}
+Shoot Type: ${formData.shootType || "Not specified"}
+Event Date: ${formData.eventDate || "Not specified"}
+
+Message:
+${formData.message}
+  `.trim();
+
+    const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(
+      message,
+    )}`;
+
+    window.open(whatsappUrl, "_blank");
+
     toast({
-      title: "Message sent!",
-      description: "We'll get back to you within 24 hours.",
+      title: "Opening WhatsApp",
+      description: "Your message is ready to send.",
     });
+
     setFormData({
       name: "",
       phone: "",
@@ -65,20 +91,20 @@ const Contact = () => {
 
   return (
     <div className="pt-24">
-<section className="section-padding text-center max-w-3xl mx-auto">
-  <p className="text-primary font-body text-xs md:text-sm tracking-[0.1em] uppercase mb-3">
-    Every Story Begins With A Moment
-  </p>
+      <section className="section-padding text-center max-w-3xl mx-auto">
+        <p className="text-primary font-body text-xs md:text-sm tracking-[0.1em] uppercase mb-3">
+          Every Story Begins With A Moment
+        </p>
 
-  <h1 className="font-display text-5xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6">
-    Tell Us Your <span className="gold-gradient-text">Story</span>
-  </h1>
+        <h1 className="font-display text-5xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6">
+          Tell Us Your <span className="gold-gradient-text">Story</span>
+        </h1>
 
-  <p className="text-muted-foreground text-base md:text-lg leading-relaxed max-w-2xl mx-auto">
-    Share your vision, your moments, and what makes your story unique.
-    Let’s turn them into photographs you’ll remember forever.
-  </p>
-</section>
+        <p className="text-muted-foreground text-base md:text-lg leading-relaxed max-w-2xl mx-auto">
+          Share your vision, your moments, and what makes your story unique.
+          Let’s turn them into photographs you’ll remember forever.
+        </p>
+      </section>
 
       <section className="max-w-6xl mx-auto px-6 pb-20">
         <div className="flex flex-col lg:flex-row gap-12">
@@ -197,7 +223,7 @@ const Contact = () => {
                   className="flex items-center gap-3 text-muted-foreground hover:text-foreground transition-colors"
                 >
                   <Mail size={18} className="text-primary" />{" "}
-                  ruhaismuhammed@gnail.com
+                  ruhaismuhammed@gmail.com
                 </a>
                 <span className="flex items-center gap-3 text-muted-foreground">
                   <MapPin size={18} className="text-primary" /> Feroke,
@@ -223,31 +249,6 @@ const Contact = () => {
                 </p>
               </div>
             </a>
-
-            {/* Social */}
-            <div className="glass-card p-8">
-              <h3 className="font-display text-xl font-semibold mb-4">
-                Follow Us
-              </h3>
-              <div className="flex gap-4">
-                {[
-                  { icon: Instagram, href: "#", label: "Instagram" },
-                  { icon: Facebook, href: "#", label: "Facebook" },
-                  { icon: Twitter, href: "#", label: "Twitter" },
-                ].map(({ icon: Icon, href, label }) => (
-                  <a
-                    key={label}
-                    href={href}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label={label}
-                    className="w-12 h-12 rounded-full border border-border flex items-center justify-center text-muted-foreground hover:text-primary hover:border-primary transition-all duration-300"
-                  >
-                    <Icon size={20} />
-                  </a>
-                ))}
-              </div>
-            </div>
           </div>
         </div>
       </section>

@@ -7,7 +7,8 @@ import heroWedding from "@/assets/hero-wedding.jpeg";
 import heroWedding5 from "@/assets/hero-wedding5.jpeg";
 import heroPortrait from "@/assets/hero-portrait.jpeg";
 import heroPortrait1 from "@/assets/hero-portrait1.jpeg";
-import heroEvents from "@/assets/hero-events.jpg";
+import heroEvents from "@/assets/hero-event1.jpeg";
+import heroEvents2 from "@/assets/hero-modeling4.jpeg";
 import heroModeling from "@/assets/hero-modeling.jpeg";
 import heroModeling2 from "@/assets/hero-modeling2.jpeg";
 
@@ -30,7 +31,7 @@ const categories = [
   {
     title: "Events",
     icon: PartyPopper,
-    image: heroEvents,
+    image: "Null",
     description: "Moments that matter",
   },
 
@@ -159,7 +160,7 @@ const Index = () => {
           <h2 className="font-display text-4xl md:text-5xl font-bold">Follow Our Journey</h2>
         </div>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
-          {[heroWedding, heroPortrait, heroEvents, heroModeling, heroModeling2, heroEvents, heroPortrait1, heroWedding5].map(
+          {[heroWedding, heroPortrait, heroEvents2, heroModeling, heroModeling2, heroEvents, heroPortrait1, heroWedding5].map(
             (src, i) => (
               <div
                 key={i}
