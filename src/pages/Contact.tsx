@@ -206,50 +206,69 @@ ${formData.message}
           </div>
 
           {/* Info sidebar */}
-          <div className="lg:w-1/3 space-y-8">
-            <div className="glass-card p-8 space-y-6">
-              <h3 className="font-display text-xl font-semibold">
-                Contact Info
-              </h3>
-              <div className="space-y-4 text-sm">
-                <a
-                  href="tel:+91-7736256589"
-                  className="flex items-center gap-3 text-muted-foreground hover:text-foreground transition-colors"
-                >
-                  <Phone size={18} className="text-primary" /> +91-7736256589
-                </a>
-                <a
-                  href="mailto:ruhaismuhammed@gnail.com"
-                  className="flex items-center gap-3 text-muted-foreground hover:text-foreground transition-colors"
-                >
-                  <Mail size={18} className="text-primary" />{" "}
-                  ruhaismuhammed@gmail.com
-                </a>
-                <span className="flex items-center gap-3 text-muted-foreground">
-                  <MapPin size={18} className="text-primary" /> Feroke,
-                  Kozhikode, Kerala, India
-                </span>
-              </div>
-            </div>
+<div className="lg:w-1/3 space-y-8">
+  <div className="glass-card p-8 space-y-6">
+    <h3 className="font-display text-xl font-semibold">
+      Contact Info
+    </h3>
 
-            {/* WhatsApp */}
-            <a
-              href={whatsappUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="glass-card p-6 flex items-center gap-4 hover:border-primary/50 transition-colors cursor-pointer group block"
-            >
-              <div className="w-12 h-12 rounded-full bg-[hsl(142,70%,45%)] flex items-center justify-center group-hover:scale-110 transition-transform">
-                <MessageCircle size={22} className="text-primary-foreground" />
-              </div>
-              <div>
-                <p className="font-display font-semibold">Chat on WhatsApp</p>
-                <p className="text-muted-foreground text-xs">
-                  Quick replies, always available
-                </p>
-              </div>
-            </a>
-          </div>
+    <div className="space-y-4 text-sm">
+      {/* India */}
+      <a
+        href="tel:+917736256589"
+        className="flex items-center gap-3 text-muted-foreground hover:text-foreground transition-colors"
+      >
+        <span className="text-lg">🇮🇳</span>
+        <Phone size={18} className="text-primary" />
+        +91-7736256589
+      </a>
+
+      {/* Dubai / UAE */}
+      <a
+        href="tel:+97156553221"
+        className="flex items-center gap-3 text-muted-foreground hover:text-foreground transition-colors"
+      >
+        <span className="text-lg">🇦🇪</span>
+        <Phone size={18} className="text-primary" />
+        +971-56553221
+      </a>
+
+      {/* Email */}
+      <a
+        href="mailto:ruhaismuhammed@gmail.com"
+        className="flex items-center gap-3 text-muted-foreground hover:text-foreground transition-colors"
+      >
+        <Mail size={18} className="text-primary" />
+        ruhaismuhammed@gmail.com
+      </a>
+
+      {/* Location */}
+      <span className="flex items-center gap-3 text-muted-foreground">
+        <MapPin size={18} className="text-primary" />
+        Feroke, Kozhikode, Kerala, India
+      </span>
+    </div>
+  </div>
+
+  {/* WhatsApp */}
+  <a
+    href={whatsappUrl}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="glass-card p-6 flex items-center gap-4 hover:border-primary/50 transition-colors cursor-pointer group block"
+  >
+    <div className="w-12 h-12 rounded-full bg-[hsl(142,70%,45%)] flex items-center justify-center group-hover:scale-110 transition-transform">
+      <MessageCircle size={22} className="text-primary-foreground" />
+    </div>
+
+    <div>
+      <p className="font-display font-semibold">Chat on WhatsApp</p>
+      <p className="text-muted-foreground text-xs">
+        Quick replies, always available
+      </p>
+    </div>
+  </a>
+</div>
         </div>
       </section>
     </div>

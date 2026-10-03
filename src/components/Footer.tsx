@@ -1,5 +1,12 @@
 import { Link } from "react-router-dom";
-import { Instagram, Facebook, Twitter, Mail, Phone, MapPin } from "lucide-react";
+import {
+  Instagram,
+  Facebook,
+  Twitter,
+  Mail,
+  Phone,
+  MapPin,
+} from "lucide-react";
 import { FaWhatsapp } from "react-icons/fa";
 
 const Footer = () => {
@@ -14,15 +21,24 @@ const Footer = () => {
               <span className="font-light">Studio</span>
             </h3>
             <p className="text-muted-foreground text-sm leading-relaxed">
-              Capturing life's most beautiful moments with artistry, passion, and a keen eye for detail.
+              Capturing life's most beautiful moments with artistry, passion,
+              and a keen eye for detail.
             </p>
           </div>
 
           {/* Quick Links */}
           <div>
-            <h4 className="font-display text-lg font-semibold mb-4">Quick Links</h4>
+            <h4 className="font-display text-lg font-semibold mb-4">
+              Quick Links
+            </h4>
             <div className="flex flex-col gap-3">
-              {["Portfolio", "Services", "About", "Testimonials", "Contact"].map((item) => (
+              {[
+                "Portfolio",
+                "Services",
+                "About",
+                "Testimonials",
+                "Contact",
+              ].map((item) => (
                 <Link
                   key={item}
                   to={`/${item.toLowerCase()}`}
@@ -37,26 +53,43 @@ const Footer = () => {
           {/* Contact Info */}
           <div>
             <h4 className="font-display text-lg font-semibold mb-4">Contact</h4>
+
             <div className="flex flex-col gap-3 text-sm text-muted-foreground">
               <span className="flex items-center gap-2">
-                <Phone size={14} className="text-primary" /> +91 7736256589
+                <span className="text-base">🇮🇳</span>
+                <Phone size={14} className="text-primary" />
+                +91 7736256589
               </span>
+
               <span className="flex items-center gap-2">
-                <Mail size={14} className="text-primary" /> ruhaismuhammed@gnail.com
+                <span className="text-base">🇦🇪</span>
+                <Phone size={14} className="text-primary" />
+                +971 56553221
               </span>
+
               <span className="flex items-center gap-2">
-                <MapPin size={14} className="text-primary" /> Feroke,
-                  Kozhikode, Kerala, India
+                <Mail size={14} className="text-primary" />
+                ruhaismuhammed@gmail.com
+              </span>
+
+              <span className="flex items-center gap-2">
+                <MapPin size={14} className="text-primary" />
+                Feroke, Kozhikode, Kerala, India
               </span>
             </div>
           </div>
 
           {/* Social */}
           <div>
-            <h4 className="font-display text-lg font-semibold mb-4">Follow Us</h4>
+            <h4 className="font-display text-lg font-semibold mb-4">
+              Follow Us
+            </h4>
             <div className="flex gap-4">
               {[
-                { icon: Instagram, href: "https://www.instagram.com/ruhh.photography?stkn=bnp5NmY3MWUxc3Bx&utm_source=qr" },
+                {
+                  icon: Instagram,
+                  href: "https://www.instagram.com/ruhh.photography?stkn=bnp5NmY3MWUxc3Bx&utm_source=qr",
+                },
                 { icon: FaWhatsapp, href: "https://wa.me/917736256589" },
               ].map(({ icon: Icon, href }, i) => (
                 <a
