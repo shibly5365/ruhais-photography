@@ -64,7 +64,7 @@ const Footer = () => {
               <span className="flex items-center gap-2">
                 <span className="text-base">🇦🇪</span>
                 <Phone size={14} className="text-primary" />
-                +971 56553221
+                +971 0526553221
               </span>
 
               <span className="flex items-center gap-2">

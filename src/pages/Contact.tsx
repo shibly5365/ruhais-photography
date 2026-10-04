@@ -225,12 +225,12 @@ ${formData.message}
 
       {/* Dubai / UAE */}
       <a
-        href="tel:+97156553221"
+        href="tel:+9710526553221"
         className="flex items-center gap-3 text-muted-foreground hover:text-foreground transition-colors"
       >
         <span className="text-lg">🇦🇪</span>
         <Phone size={18} className="text-primary" />
-        +971-56553221
+        +971-0526553221
       </a>
 
       {/* Email */}
